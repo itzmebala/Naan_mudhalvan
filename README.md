@@ -1,4 +1,3 @@
-
 # Chatbot - NAAN MUDHALVAN
 
 ## Overview
@@ -8,12 +7,12 @@
 ## Setup
 
 Clone repo and create a virtual environment
-
-$ git clone https://github.com/itzmebala/Naan_mudhalvan.git# Naan_mudhalvan.git
+```
+$ git clone https://github.com/itzmebala/Naan_mudhalvan.git
 $ cd chatbot-deployment
 $ python3 -m venv venv
 $ venv/Scripts/activate
-
+```
 ## Dependencies
 Before running the code, you'll need to install the following dependencies:
 - Python (3.7+)
@@ -22,36 +21,36 @@ Before running the code, you'll need to install the following dependencies:
 - NLTK (3.6+)
 - NumPy (1.20+)
 You can install these dependencies using pip. For example:
-
+```
 $ pip install torch flask nltk numpy
-
+```
 
 Install dependencies
-
+```
 $ (venv) pip install Flask torch torchvision nltk
-
+```
 Install nltk package
-
+```
 $ (venv) python
 >>> import nltk
 >>> nltk.download('punkt')
-
+```
 Modify `intents.json` with different intents and responses for your Chatbot
 
 Run
-
+```
 $ (venv) python train.py
-
+```
 This will dump data.pth file. And then run
 the following command to test it in the console.
-
+```
 $ (venv) python chat.py
-
+```
 ## Running the Web Application:
 - The chatbot is accessible through a web application. To run the web application, use the following command:
-
+```
 python app.py (or) flask run
-
+```
 - The web application will be available at http://127.0.0.1:5000/ by default. You can access it through a web browser.
 
 ## Interacting with the Chatbot:
